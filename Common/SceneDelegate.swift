@@ -6,17 +6,37 @@
 //
 
 import UIKit
+import RxFlow
+import RxSwift
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    var coordinator: FlowCoordinator = .init()
+    var appFlow: AppFlow!
+    let disposeBag = DisposeBag()
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        
+        UINavigationBar.appearance().isHidden = false
+        self.window!.backgroundColor = .white
+        
+        coordinator.rx.willNavigate.subscribe(onNext: { (flow, step) in
+            print("will navigate to flow=\(flow) and step=\(step)")
+//            LogEx.v("will navigate to flow=\(flow) and step=\(step)")
+        }).disposed(by: self.disposeBag)
+        
+        coordinator.rx.didNavigate.subscribe(onNext: { (flow, step) in
+            print("did navigate to flow=\(flow) and step=\(step)")
+//            LogEx.v("did navigate to flow=\(flow) and step=\(step)")
+        }).disposed(by: self.disposeBag)
+        self.appFlow = AppFlow(withWindow: self.window!)
+        
+        coordinator.coordinate(flow: self.appFlow, with: AppStepper())
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
