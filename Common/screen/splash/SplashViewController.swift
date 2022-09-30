@@ -11,34 +11,10 @@ import RxSwift
 import RxFlow
 import RxCocoa
 
-class SplashViewController: UIViewStepController, StoryboardBased, ViewModelBased, Stepper {
-    var viewModel: SplashViewModel!
-    
-    private func initView() {
-    }
-    
-    private func initObservable(_ disposeBag : DisposeBag) {
-        /*
-        viewModel.error.asObservable()
-            .skip(1)
-            .map {
-                $0!
-            }
-            .bind(to: self.errorAlert)
-            .disposed(by: disposeBag)
-        viewModel.toast.asObservable()
-            .skip(1)
-            .map {
-                $0
-            }
-            .bind(to: self.toastShow)
-            .disposed(by: disposeBag)*/
-    }
+class SplashViewController: UIViewStepController<SplashViewModel>, StoryboardBased, ViewModelBased, Stepper {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.initView()
-        self.initObservable(viewModel.disposeBag)
     }
     
     override func viewWillAppear(_ animated: Bool) {

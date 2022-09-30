@@ -32,7 +32,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         coordinator.rx.didNavigate.subscribe(onNext: { (flow, step) in
             print("did navigate to flow=\(flow) and step=\(step)")
-//            LogEx.v("did navigate to flow=\(flow) and step=\(step)")
+//            LogEx.v("did navigate to flow=\(flow) and step=\(step)"\
         }).disposed(by: self.disposeBag)
         self.appFlow = AppFlow(withWindow: self.window!)
         

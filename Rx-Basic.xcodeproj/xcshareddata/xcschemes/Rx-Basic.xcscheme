@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B0A0445728E581E100E26AD4"
-               BuildableName = "Rx-Basic-OP.app"
+               BuildableName = "Rx-Basic.app"
                BlueprintName = "Rx-Basic"
                ReferencedContainer = "container:Rx-Basic.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B0A0445728E581E100E26AD4"
-            BuildableName = "Rx-Basic-OP.app"
+            BuildableName = "Rx-Basic.app"
             BlueprintName = "Rx-Basic"
             ReferencedContainer = "container:Rx-Basic.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B0A0445728E581E100E26AD4"
-            BuildableName = "Rx-Basic-OP.app"
+            BuildableName = "Rx-Basic.app"
             BlueprintName = "Rx-Basic"
             ReferencedContainer = "container:Rx-Basic.xcodeproj">
          </BuildableReference>

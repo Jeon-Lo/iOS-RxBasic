@@ -1,0 +1,23 @@
+{
+  "images": [
+    {
+      "filename": "aNaviDownNor.png",
+      "idiom": "universal",
+      "scale": "1x"
+    },
+    {
+      "filename": "aNaviDownNor@2x.png",
+      "idiom": "universal",
+      "scale": "2x"
+    },
+    {
+      "filename": "aNaviDownNor@3x.png",
+      "idiom": "universal",
+      "scale": "3x"
+    }
+  ],
+  "info": {
+    "author": "xcode",
+    "version": 1
+  }
+}

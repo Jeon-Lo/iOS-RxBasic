@@ -7,6 +7,7 @@
 
 import UIKit
 import Reusable
+import RxSwift
 
 protocol ViewModel {
 }

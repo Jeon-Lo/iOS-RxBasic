@@ -1,0 +1,23 @@
+{
+  "images": [
+    {
+      "filename": "aIconShoppingPre.png",
+      "idiom": "universal",
+      "scale": "1x"
+    },
+    {
+      "filename": "aIconShoppingPre@2x.png",
+      "idiom": "universal",
+      "scale": "2x"
+    },
+    {
+      "filename": "aIconShoppingPre@3x.png",
+      "idiom": "universal",
+      "scale": "3x"
+    }
+  ],
+  "info": {
+    "author": "xcode",
+    "version": 1
+  }
+}

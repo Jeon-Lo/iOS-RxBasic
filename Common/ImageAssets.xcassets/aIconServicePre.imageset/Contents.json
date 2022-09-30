@@ -1,0 +1,23 @@
+{
+  "images": [
+    {
+      "filename": "aIconServicePre.png",
+      "idiom": "universal",
+      "scale": "1x"
+    },
+    {
+      "filename": "aIconServicePre@2x.png",
+      "idiom": "universal",
+      "scale": "2x"
+    },
+    {
+      "filename": "aIconServicePre@3x.png",
+      "idiom": "universal",
+      "scale": "3x"
+    }
+  ],
+  "info": {
+    "author": "xcode",
+    "version": 1
+  }
+}

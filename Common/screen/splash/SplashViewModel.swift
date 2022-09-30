@@ -8,15 +8,8 @@
 import RxSwift
 import RxCocoa
 
-class SplashViewModel: ViewModel, ViewModelBased {
-    var viewModel: SplashViewModel!
-    var disposeBag = DisposeBag()
-    
-    
-    internal let error = BehaviorRelay<Error?>(value: nil)
-    internal let toast = BehaviorRelay<String>(value: "")
-    
-    init() {
+class SplashViewModel: BaseViewModel {
+    required init() {
         
     }
 }

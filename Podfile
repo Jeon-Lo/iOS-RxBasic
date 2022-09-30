@@ -16,6 +16,7 @@ def pods
     pod 'Reusable'
     pod 'RealmSwift'
     pod 'Kingfisher'
+    pod 'SwiftGen'
     pod 'Hero'
 end
 
